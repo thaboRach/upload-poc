@@ -5,9 +5,19 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Recording Upload</title>
+
+    <script src="/coi-serviceworker.js"></script>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <script>
+      if (window.crossOriginIsolated) {
+        console.log('✅ Application is successfully Cross-Origin Isolated!');
+        // SharedArrayBuffer and multi-threading are now available
+      } else {
+        console.log('❌ Isolation failed.');
+      }
+    </script>
   </body>
 </html>

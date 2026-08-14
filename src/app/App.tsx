@@ -84,6 +84,7 @@ function App() {
 
     setProcessedAudioDetails(null);
     setProcessedAudioUrl(null);
+    setError(null);
 
     await loadFfmpeg();
 
