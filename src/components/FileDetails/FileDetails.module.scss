@@ -1,0 +1,15 @@
+.fileDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+
+  .lineItem {
+    display: grid;
+    grid-template-columns: 8.5rem minmax(0, 1fr);
+
+    .label {
+      font-weight: bold;
+      white-space: nowrap;
+    }
+  }
+}

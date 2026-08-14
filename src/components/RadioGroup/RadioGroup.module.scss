@@ -1,0 +1,38 @@
+.radioGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  color: #f3f4f6;
+}
+
+.legend {
+  font-weight: 700;
+}
+
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+}
+
+.option {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.option input {
+  width: 1rem;
+  height: 1rem;
+  margin: 0;
+  accent-color: #007bff;
+}
+
+.radioGroup:disabled .option {
+  color: #9ca3af;
+  cursor: not-allowed;
+}
