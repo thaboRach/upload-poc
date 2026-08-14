@@ -74,6 +74,7 @@ function App() {
     setProcessedAudioDetails(null);
     setProcessedAudioUrl(null);
     setError(null);
+    setProcessingTimeMs(null);
   };
 
   const handleProcessClick = async () => {
@@ -85,6 +86,7 @@ function App() {
     setProcessedAudioDetails(null);
     setProcessedAudioUrl(null);
     setError(null);
+    setProcessingTimeMs(null);
 
     await loadFfmpeg();
 
